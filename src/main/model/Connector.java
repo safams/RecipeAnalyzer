@@ -21,7 +21,7 @@ public abstract class Connector {
     protected Statement createConnection() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         connect = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/recipeDatabase", "root", "");
+               
 
         query = connect.createStatement();
 
